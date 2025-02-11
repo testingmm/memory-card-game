@@ -81,7 +81,7 @@ const ImageGallery = () => {
             <Score score={score} highScore={highScore} />
             <div className='row container-fluid p-5'>
                 {images && images.length > 0 && images.map((img, index) => {
-                    return <div className='col-3 mb-2'>
+                    return <div className='col-2 mb-2'>
                         <ImageCard key={index} imgData={img} onClickImage={handleImageSelection} />
                     </div>
                 })}
